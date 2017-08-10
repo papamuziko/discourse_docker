@@ -84,7 +84,7 @@ ensure_docker_squash
 
 images = {
   base: { name: 'base', tag: "discourse/base:#{version}", squash: true },
-  discourse: { name: 'discourse', tag: "discourse/discourse:#{version}", squash: true, layers_to_keep: 1 },
+  discourse: { name: 'discourse', tag: "papamuziko/discourse:#{version}", squash: true, layers_to_keep: 1 },
   discourse_test: { name: 'discourse_test', tag: "discourse/discourse_test:#{version}", squash: true, layers_to_keep: 2 },
   discourse_dev: { name: 'discourse_dev', tag: "discourse/discourse_dev:#{version}", squash: false },
   discourse_bench: { name: 'discourse_bench', tag: "discourse/discourse_bench:#{version}", squash: false }
